@@ -6,7 +6,9 @@
 
 int main(void)
 {
-	/* TODO: Test functions */
-
+	unsigned int n = 0x00000001; 
+	rotate_right( &n , 16) ;
+	printf( "%d " , n );
+	
 	return 0;
 }

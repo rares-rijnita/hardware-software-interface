@@ -8,6 +8,12 @@
 
 void mirror(char *s)
 {
-	/* TODO */
-	(void) s;
-}
+	char *m = malloc( (int)strlen(s) );
+	int i = 0 ; 
+	while( *(s+i) ) {
+		*(m + i ) = *( s + strlen(s) - 1 - i );
+		i++;
+	}
+	*(m+i) = '\0';
+	strcpy( s , m );
+}	

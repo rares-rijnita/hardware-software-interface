@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	/* TODO: Test function */
+	mirror( "ASD" );
 
 	return 0;
 }

@@ -24,9 +24,11 @@ int main(void)
 		scanf("%d", numbers + i);
 	}
 
-	check_parity(numbers, n);
+	for (i = 0; i < n; ++i) {
+		printf("Number %d: ", i + 1);
+		scanf("%d", numbers + i);
+	}
 
-	free(numbers);
 
 	return EXIT_SUCCESS;
 }

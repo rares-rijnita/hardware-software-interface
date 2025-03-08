@@ -7,7 +7,17 @@
 
 int main(void)
 {
-	/* TODO: Test functions */
+	int *numbers , i , n ; 
+	scanf("%d", &n);
+	numbers = malloc( sizeof(int) * n );
 
-	return 0;
+	for (i = 0; i < n; ++i) {
+		printf("Number %d: ", i + 1);
+		scanf("%d", numbers + i);
+	}
+
+	check_parity(numbers, n);
+
+	free(numbers);
+
 }

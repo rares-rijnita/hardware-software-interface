@@ -9,4 +9,6 @@ void rotate_left(unsigned int *number, int bits);
 
 void rotate_right(unsigned int *number, int bits);
 
+unsigned int one_left( unsigned int n );
+
 #endif /* ROTATE_H_ */
